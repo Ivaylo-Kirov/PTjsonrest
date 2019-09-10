@@ -7,10 +7,11 @@ import json
 
 def lambda_handler(event, context):
     # TODO implement
-    todosGET = [{ "todo1" : {'id': 1, 'name': 'getfirst'}}, 
-             {"todo2": {'id': 2, 'name': 'getsecond'}}]
+    todosGET = [{'id': 1, 'name': 'getfirst'}, 
+                {'id': 2, 'name': 'getsecond'}]
+                
     todosPOST = [{'id': 1, 'name': 'postfirst'}, 
-             {'id': 2, 'name': 'postsecond'}]
+                 {'id': 2, 'name': 'postsecond'}]
     
     if event["httpMethod"] == "GET":
         return {
